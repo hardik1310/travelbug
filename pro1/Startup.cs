@@ -10,5 +10,6 @@ namespace pro1
         {
             ConfigureAuth(app);
         }
+
     }
 }

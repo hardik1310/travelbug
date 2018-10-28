@@ -24,7 +24,16 @@ namespace pro1
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/style1.css",
+                      "~/Content/w3.css",
+                      "~/Content/site.css",
+                      "~/Content/style2.css",
+                      "~/Content/main.css",
+                      "~/Content/gallery.css",
+                      "~/Content/color.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
+                       "~/Content/slide.js"));
         }
     }
 }

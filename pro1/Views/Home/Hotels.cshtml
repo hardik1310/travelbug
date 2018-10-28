@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Book";
+}
+
+@using (Html.BeginForm("BookHotels2", "", FormMethod.Get,
+                                      new { enctype = "multipart/form-data" }))
+{
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <div class="form-header">
+                            <h1>Book Hotels</h1>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.Label("Check In", new { @class = "form-label" })
+                                        @Html.TextBox("CIn", null, new { type = "date", @class = "form-control" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.Label("Check Out", new { @class = "form-label" })
+                                        @Html.TextBox("COut", null, new { type = "date", @class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.Label("No of Rooms", new { @class = "form-label" })
+
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span class="form-label">Total person</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.Label("City", new { @class = "form-label" })
+                                        @Html.TextBox("City", null, new { @class = "form-control" })
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+
+                                <button class="submit-btn"> Check availability</button>
+                                @*<a href="~/Home/BookHotels2" > check</a>*@
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

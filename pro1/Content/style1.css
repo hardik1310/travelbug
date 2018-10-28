@@ -1,0 +1,113 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #8360c3;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+.active {
+    background-color: #4CAF50;
+}
+
+.mySlides {
+    display: none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor: pointer
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery {
+    width: 640px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+    .gallery > div {
+        position: relative;
+        float: left;
+        padding: 5px;
+    }
+
+        .gallery > div > img {
+            display: block;
+            width: 200px;
+            transition: .1s transform;
+            transform: translateZ(0); /* hack */
+        }
+
+        .gallery > div:hover {
+            z-index: 1;
+        }
+
+            .gallery > div:hover > img {
+                transform: scale(1.7,1.7);
+                transition: .3s transform;
+            }
+
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cf:after {
+    clear: both;
+}
+
+h1 {
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
